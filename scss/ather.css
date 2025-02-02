@@ -78,6 +78,7 @@ body {
   color: var(--red-color-1);
 }
 .n-container aside .side-element {
+  height: 100%;
   margin-top: 50px;
   gap: 10px;
 }
@@ -92,17 +93,25 @@ body {
   transition: 0.3s ease;
 }
 .n-container aside .side-element a span {
+  transition: 0.3s ease;
   font-size: 30px;
   font-style: normal;
 }
-.n-container aside .side-element a:hover {
+.n-container aside .side-element a:hover span {
+  color: var(--red-color-1);
+}
+.n-container aside .side-element .open-page {
   width: 200%;
   border-radius: 25px 0px 0px 25px;
 }
-.n-container aside .side-element a:hover span {
-  color: red;
+.n-container aside .side-element .open-page span {
+  background-color: var(--red-color-2);
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--wihit-color-1);
 }
 .n-container main {
+  height: 100%;
   grid-column-start: 3;
   grid-column-end: 16;
   display: grid;
@@ -115,12 +124,15 @@ body {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 .n-container main .products .product-head {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 20px 30px;
   gap: 20px;
 }
 .n-container main .products .product-head a {
@@ -146,11 +158,9 @@ body {
   color: var(--wihit-color-1);
 }
 .n-container main .products .product-search {
-  width: 90%;
-  padding: 10px;
+  width: 93%;
   border: 1px solid var(--black-color-3);
-  border-radius: 50px;
-  margin: auto;
+  border-radius: 20px;
 }
 .n-container main .products .product-search .product-search-r,
 .n-container main .products .product-search .product-search-l {
@@ -193,7 +203,10 @@ body {
 }
 .n-container main .products .show-product {
   width: 100%;
-  height: 400px;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 10px 35px;
@@ -220,6 +233,19 @@ body {
 }
 .n-container main .products .show-product .product-cards .about-name-cards p {
   color: var(--black-color-4);
+}
+.n-container main .products .show-product .product-cards .about-name-cards .order-btn {
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 18px;
+  border: 1px solid var(--red-color-1);
+}
+.n-container main .products .show-product .product-cards .about-name-cards .order-btn:hover {
+  width: 150px;
+  background: none;
+  color: var(--red-color-1);
 }
 .n-container main .products .show-product .product-cards .about-cards-img {
   position: relative;
