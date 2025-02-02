@@ -138,7 +138,7 @@ function showOrderList(order_cards) {
                         </div>
                         <div class="detalis2 flex  items-center gap-2">
                             <div class="qty">${MarCard.orederQuant}</div>
-                            <div class="total-price">${MarCard.price}</div>
+                            <div class="total-price">$${MarCard.price}</div>
                             <button class="remove">
                                 <span class="material-symbols-outlined">
                                     delete
@@ -160,8 +160,10 @@ let order_cards = [
 function orderbtn(index) {
         if (order_cards.find((item) => item.id == products[index].id)) {
             order_cards.forEach((products) => {
-                if (products.id == products[index.id]) {
+                if (products.id = products[index.id]) {
                     products.orederQuant++
+                    products.quant++
+                    
                 }
             })
         } else {

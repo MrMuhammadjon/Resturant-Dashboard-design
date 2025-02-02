@@ -352,8 +352,8 @@ body {
             }
         }
         .order-list {
-            height: 100%;
-            overflow-y: auto;
+            height: 450px;
+            overflow-y: scroll;
             margin-bottom: 15px;
         }
         .order-item {
