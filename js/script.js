@@ -160,10 +160,9 @@ let order_cards = [
 function orderbtn(index) {
         if (order_cards.find((item) => item.id == products[index].id)) {
             order_cards.forEach((products) => {
-                if (products.id = products[index.id]) {
+                if (products.id == products[index.id]) {
                     products.orederQuant++
                     products.quant++
-                    
                 }
             })
         } else {
