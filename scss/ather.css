@@ -119,12 +119,14 @@ body {
   gap: 10px;
 }
 .n-container main .products {
+  height: 100%;
   grid-column-start: 1;
   grid-column-end: 4;
   gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   overflow: hidden;
 }
 .n-container main .products .product-head {
@@ -289,6 +291,7 @@ body {
   transform: scale(1.2);
 }
 .n-container main .order-container {
+  height: 100%;
   background: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
@@ -301,27 +304,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.n-container main h2 {
+.n-container main .order-container h2 {
   text-align: center;
 }
-.n-container main .order-options {
+.n-container main .order-container .order-options {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 15px;
   gap: 10px;
 }
-.n-container main .order-options .order-options-head {
+.n-container main .order-container .order-options .order-options-head {
   display: flex;
   align-items: start;
   justify-content: start;
 }
-.n-container main .order-options .order-options-head-btn {
+.n-container main .order-container .order-options .order-options-head-btn {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.n-container main .order-options .order-options-head-btn button {
+.n-container main .order-container .order-options .order-options-head-btn button {
   flex: 1;
   background: var(--red-color-1);
   border: none;
@@ -330,12 +333,12 @@ body {
   cursor: pointer;
   color: white;
 }
-.n-container main .order-list {
+.n-container main .order-container .order-list {
   height: 450px;
   overflow-y: scroll;
   margin-bottom: 15px;
 }
-.n-container main .order-item {
+.n-container main .order-container .order-item {
   display: flex;
   align-items: center;
   background: #292929;
@@ -343,31 +346,31 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
-.n-container main .order-item img {
+.n-container main .order-container .order-item img {
   width: 40px;
   height: 40px;
   border-radius: 5px;
   margin-right: 10px;
 }
-.n-container main .details {
+.n-container main .order-container .details {
   flex-grow: 1;
 }
-.n-container main .qty,
-.n-container main .total-price {
+.n-container main .order-container .qty,
+.n-container main .order-container .total-price {
   margin-left: 10px;
 }
-.n-container main .remove {
+.n-container main .order-container .remove {
   background: none;
   border: none;
   color: red;
   cursor: pointer;
 }
-.n-container main .order-summary {
+.n-container main .order-container .order-summary {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.n-container main .payment-button {
+.n-container main .order-container .payment-button {
   width: 100%;
   background: red;
   color: white;
